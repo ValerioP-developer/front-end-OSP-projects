@@ -3,12 +3,302 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Title</title>
+    <title>Demo Blog</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet'  href='styleblog.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 </head>
 <body>
-             This is a test!!! 
+<div  class="jumbotron"  id="jumbotron-top"  >
+    <div class="container-fluid"   >
+                <nav class="navbar navbar-expand-lg "  >
+                    <a class="navbar-brand" href="#"    > <h2 class="blogGr-text" >Blogr</h2> </a>
+                    <button class="navbar-toggler" type="button"  onclick="openNav()"     data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style=" outline:0;">
+                        <img  src="images-blog/icon-hamburger.svg" >  </img>
+                    </button>
+                    <div class="collapse navbar-collapse"> <!-- for opening with hamburger button in small screen add  id="navbarSupportedContent"   -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item " >
+                                 <div class="dropdown">
+                                <button class="navbar-btn  dropdown-toggle dropdown-navbar " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                 <b> Product </b>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Overview </a>
+                                  <a class="dropdown-item" href="#">Pricing </a>
+                                  <a class="dropdown-item" href="#">Marketplace</a>
+                                  <a class="dropdown-item" href="#">Features</a>
+                                  <a class="dropdown-item" href="#">Integration</a>
+
+                                </div>
+                              </div>
+                        </li>
+                        <li class="nav-item " >
+                            <div class="dropdown">
+                                <button class="navbar-btn  dropdown-toggle dropdown-navbar" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b> Company</b>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">About</a>
+                                  <a class="dropdown-item" href="#">Team</a>
+                                  <a class="dropdown-item" href="#">Blog</a>
+                                  <a class="dropdown-item" href="#">Careers</a>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="nav-item " >
+                            <div class="dropdown">
+                                <button class="navbar-btn  dropdown-toggle  dropdown-navbar" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <b>Connect</b>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Contact</a>
+                                  <a class="dropdown-item" href="#">Newsletter</a>
+                                  <a class="dropdown-item" href="#">Linkedin</a>
+                                </div>
+                              </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline"  style="margin-right: 2%;" >
+                        <button type="button" class="btn btn-primary d-none d-sm-none d-md-none d-lg-block "   id="login-top"   >Login</button>
+                        <button type="button" class="btn btn-primary d-none  d-sm-none d-md-none d-lg-block"  id="signup-btn"  >Sign Up</button>
+                    </form>
+                    </div>
+                </nav>
+                <!--  SMALL DEVICE-->
+                <p class="text-center d-block d-sm-block d-md-none modern-text  modern-text-sm " style="font-size:5.5vw;"  >  A modern <br>publishing platform   </p>
+                <p class="text-center d-block d-sm-block d-md-none grow-text" style="font-size: 3vw">Grow your audience and build your <br> online brand  </p> 
+                <form class="form-inline  justify-content-center" style="margin-bottom: 2%;">
+                        <button type="button" class="btn btn-primary  form-btn-sm"  id="start-btn"  > Start for free </button>
+                        <button type="button" class="btn btn-primary form-btn-sm "  id="learn-more-btn"  > Learn More </button>
+                </form>
+               
+                <!--  MEDIUM DEVICE-->
+                <p class="text-center d-none d-md-block d-lg-block modern-text" style="font-size:3.8vw;"  >  A modern publishing platform   </p>
+                <p class="text-center d-none d-md-block d-lg-block grow-text" style="font-size: 1.5vw">Grow your audience and build your online brand  </p> 
+                    <form class="form-inline  justify-content-center  my-2 my-lg-0  "  >
+                        <button type="button" class="btn btn-primary  d-none d-sm-block d-md-block d-lg-block"  id="start-btn"  > Start for free </button>
+                        <button type="button" class="btn btn-primary  d-none d-sm-block d-md-block d-lg-block"  id="learn-more-btn"  >Learn More </button>
+                    </form>
+    </div>
+</div> <!-- JUMBOTRON NAVBAR -->
+
+<div class="container-fluid" >
+    <h3 class="text-center text-title d-block d-sm-block d-md-none  design-text-sm" >  Disegned for the future  </h3>  <!-- check another way for that-->
+    <h3 class="text-center text-title d d-none d-md-block d-lg-block  design-text-md"   >  Disegned for the future  </h3>  <!-- check another way for that-->
+
+    <div class="row" >
+        <!-- COL SMALL DEVICE ###########################################################   -->
+        <div class="col-sm-12  d-block d-sm-block d-md-none" >
+                <div class="col-sm-12 editor-img-sm"  >
+                   <div class="text-center"> <img src="images-blog/illustration-editor-mobile.svg" class="img-fluid"> </img> </div>
+                </div>
+                <p  class="text-paragraph  paragr-editor-text-sm" >
+                    <span  class="d-flex justify-content-center text-subtitle" ><b> Introducing an<br> extensible editor  </b></span><br>
+                    Blogr features an exceedingly intuitive interface which lets you focus 
+                    on one thing: creating content. The editor supports management of 
+                    multiple blogs and allows easy manipulations of embeds such as images,  
+                    videos and Markdown. Extensibility with plugins and themes provide 
+                    easy ways to add functionality or change the looks of a blog. <br><br>
+                    <span   class="d-flex justify-content-center text-subtitle"><b> Robust content management</b>  </span><br>
+                    Flexible content management enables users to easily move through 
+                    posts, increase the usability of your blog by adding customized  
+                    categories sections, format or flow. With this functionality you are in
+                full control.<br>
+                </p>
+        </div>
+            
+    <!--  MEDIUM DEVICE ###########################################################-->
+    <div class="col-md-6  d-none d-md-block d-lg-block"  style="height:900px ;">
+            <p  class="text-paragraph paragr-editor-text-md" >
+                <span  class="text-subtitle" ><b> Introducing an extensible editor  </b></span><br><br>
+                Blogr features an exceedingly intuitive interface which lets you focus <br>
+                on one thing: creating content. The editor supports management of 
+                multiple blogs and allows easy manipulations of embeds such as images,  
+                videos and Markdown. Extensibility with plugins and themes provide <br>
+                easy ways to add functionality or change the looks of a blog. 
+                <br><br><br><br><br>
+                <span  class="text-subtitle"><b> Robust content management</b>  </span><br><br>
+                Flexible content management enables users to easily move through 
+                posts, increase the usability of your blog by adding customized   
+                categories sections, format or flow. With this functionality, you are in<br>
+            full control.<br>
+            </p>
+        </div>
+        <div class="col-md-6  d-none d-md-block d-lg-block" style="background-image: url('images-blog/illustration-editor-desktop.svg');background-repeat:no-repeat;height:900px ;" >
+        </div>
+    </div>
+    <!--  SMALL DEVICE ###########################################################-->
+    <div class="row d-block d-sm-block d-md-none  state-text-sm background-state-sm"    >
+      <img src="images-blog/illustration-phones.png" class ="img-fluid  img-phones-sm" >  
+            <p style="text-align: center;"  class="text-phones-paragraph">
+                <span  class="text-phones-subtitle"  > <b>State of the Art Infrastructure </b> </span><br><br>
+                        With reliability and speed in mind, worldwide data centers provide the 
+                        backbone for ultra fast connectivity. This ensures your site will load  
+                        instantly, no matter where you readers are, keeping your site
+                        competitive.
+            </p>
+        <br><br>
+    </div>
+    <div class="row "  >
+        <!--  MEDIUM DEVICE ########################################################### -->
+        <div class="col-md-7  d-none d-md-block  d-lg-block d-sm-none  background-phone-left"   >
+            <img src="images-blog/illustration-phones.png" height="350" class="img-phones-md" >
+        </div>
+        <div class="col-md-5  d-none d-md-block  d-lg-block d-sm-none  background-phone-right"   >
+            <p style="margin-right: 8%;margin-top: 4%;" class="d-none d-md-block  d-lg-block d-sm-none text-phones-paragraph" >
+                <span  class="text-phones-subtitle"  > <b>State of the Art Infrastructure </b> </span><br><br>
+                With reliability and speed in mind, worldwide data centers provide the 
+                backbone for ultra fast connectivity. This ensures your site will load 
+                instantly, no matter where you readers are, keeping your site 
+                competitive.
+            </p>  
+        </div>
+    </div> 
+   <!--  SMALL DEVICE   -->   
+   <div class="row d-block d-sm-block d-md-none"  >
+        <div class="col-sm-12" >
+            <p  class="text-paragraph paragr-illustration-sm" >
+                <img src="images-blog/illustration-laptop-mobile.svg" class="img-fluid"  >  
+                <br>
+                <span  class="text-subtitle"> <b> Free,open,simple </b></span><br><br>
+                Blogr is a free and open source application backed by a large 
+                community of helpful developers. It supports features such as code 
+                syntax highlightings. RSS feeds, social media integration, third party  
+                commenting tools and works seamlessly with Google Analytics. The
+                architecture is clean and is relatively easy to learn <br><br>
+                <span  class="text-subtitle" > <b>Powerful tooling </b> </span><br><br>
+                        Batteries included. We built a simple and straightforward CLI tool that
+                        makes customizations and deployment a breeze, but capable of
+                        producing even the most complicated sites.
+                </span>
+            </p>
+        </div>
+    </div>
+   <!--  MEDIUM DEVICE  -->
+   <div class="row row-illustration-md" >
+    <div class="col-md-6 " >
+        <img src="images-blog/illustration-laptop-desktop.svg" class="img-fluid d-none d-md-block  d-lg-block d-sm-none  img-illustration-md"   >  
+    </div>
+    <div class="col-md-6 "  >
+        <p  class="text-paragraph d-none d-md-block  d-lg-block d-sm-none  paragr-illustration-md" >
+            <span  class="text-subtitle"><b> Free,open,simple </b></span><br><br>
+             Blogr is a free and open source application backed by a large<br>
+             community of helpful developers. It supports features such as code <br>
+             syntax highlightings. RSS feeds, social media integration, third party  <br>
+             commenting tools and works seamlessly with Google Analytics. The <br>
+             architecture is clean and is relatively easy to learn.
+            <br><br>
+            <span  class="text-subtitle"><b> Powerful tooling</b>  </span><br><br>
+            Batteries included. We built a simple and straightforward CLI tool that<br>
+            makes customizations and deployment a breeze, but capable of  <br> 
+            producing even the most complicated sites.
+         </p>
+    </div>
+</div>
+</div>  <!-- MAIN CONTAINER -->
+   <!-- ################# ################### ################# ################### -->
+<div  class="jumbotron" id="jumbotron-bottom" >
+    <div class="container">
+    <div class="row" >
+                <div class="col-md-3 col-sm-12  d-none d-md-block  d-lg-block d-sm-none">
+                        <div class="d-flex justify-content-center">
+                            <h2  class="footer-title" id="jumbo-bottom-title"  > Blogr </h2>
+                        </div>  <br><br>  
+                </div>
+                <div class="col-md-3 col-sm-12  d-none d-md-block  d-lg-block d-sm-none  jumbo-bottom-list-md" >
+                       <div class="d-flex justify-content-center">
+                                <ul class="list-footer">
+                                    <p class="footer-title" ><b>Product</b> </p>
+                                    <li style="margin-top:  3%;"><a href="#">Overview</a></li>
+                                    <li ><a href="#">Pricing</a></li>
+                                    <li ><a href="#">Marketplace</a></li>
+                                    <li ><a href="#">Features  </a></li>
+                                    <li ><a href="#">Integrations</a></li>
+                                </ul>
+                        </div> 
+                </div>
+                <div class="col-md-3 col-sm-12 d-none d-md-block  d-lg-block d-sm-none  jumbo-bottom-list-md">
+                    <div class="d-flex justify-content-center">
+                            <ul class="list-footer" >
+                                <p class="footer-title" ><b>Company</b> </p>
+                                <li style="margin-top:  3%;"><a href="#">About</a></li>
+                                <li ><a href="#" >Team</a></li>
+                                <li ><a href="#">Blog</a></li>
+                                <li ><a href="#">Careers</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 d-none d-md-block  d-lg-block d-sm-none  jumbo-bottom-list-md" >
+                    <div class="d-flex justify-content-center">
+                        <ul  class="list-footer">
+                            <p class="footer-title" ><b>Connect</b> </p>
+                            <li style="margin-top:  3%;"><a href="#">Contact</a></li>
+                            <li ><a href="#">Newsletter</a></li>
+                            <li ><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                 </div>
+    </div>
+    <div class="row text-center d-block d-sm-block d-md-none" >
+            <div class="d-flex justify-content-center"  >
+                    <ul class="list-footer ">
+                        <p class="footer-title" ><b>  <h2  class="footer-title  jumbo-bottom-list-md"   > Blogr </h2></b> </p>
+                         <p class="footer-title" ><b>Product</b> </p>
+                         <li class="jumbo-bottom-list-sm" ><a href="#">Overview</a></li>
+                         <li ><a href="#">Pricing</a></li>
+                         <li ><a href="#">Marketplace</a></li>
+                         <li ><a href="#">Features</a></li>
+                         <li ><a href="#">Integrations</a></li>
+                         <li ><br></li> 
+                         <p class="footer-title " ><b>Company</b> </p>
+                         <li class="jumbo-bottom-list-sm" ><a href="#">About</a></li>
+                         <li ><a href="#">Team</a></li>
+                         <li ><a href="#">Blog</a></li>
+                         <li ><a href="#">Careers</a></li>
+                         <li ><br></li> 
+                         <p class="footer-title" ><b>Connect</b> </p>
+                         <li class="jumbo-bottom-list-sm" ><a href="#">Contact</a></li>
+                         <li ><a href="#">Newsletter</a></li>
+                         <li ><a href="#">Linkedin</a></li>
+                     </ul>
+            </div> 
+    </div>
+   </div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav right-navbar mr-auto" >
+        <li class="jumbo-bottom-list-sm" ><a href="#">Overview</a></li>
+        <li ><a href="#">Pricing</a></li>
+        <li ><a href="#">Marketplace</a></li>
+        <li ><a href="#">Features</a></li>
+        <li ><a href="#">Integrations</a></li>
+        <li ><br></li> 
+        <li class="jumbo-bottom-list-sm" ><a href="#">About</a></li>
+        <li ><a href="#">Team</a></li>
+        <li ><a href="#">Blog</a></li>
+        <li ><a href="#">Careers</a></li>
+        <li ><br></li> 
+        <li class="jumbo-bottom-list-sm" ><a href="#">Contact</a></li>
+        <li ><a href="#">Newsletter</a></li>
+        <li ><a href="#">Linkedin</a></li>
+    </ul>
+</div>
+
+
 </body>
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </html>
