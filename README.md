@@ -1,4 +1,7 @@
-#  CHALLENGE: Blogr landing page 
+#  CHALLENGE:
+
+> Blogr landing page 
+> Stats preview card component
 
 ### LIBRARY USED 
 
@@ -10,6 +13,8 @@
 ### Materials (Design,Images,Mockup)
 
 https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP
+
+https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62
 
 ### LICENSE 
 

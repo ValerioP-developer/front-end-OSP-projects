@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+body {
+  background-color: #090b1a !important;
+}
+
+#advertisement-background {
+  background-size: 100% 100%;
+  background-position: center;
+  top: 0;
+}
+
+.shade-container {
+  width: 100%;
+  height: 100%;
+  background: #aa5cdb;
+  opacity: 0.5;
+}
+
+.shade-img {
+  background: #aa5cdb;
+  opacity: 0.5;
+}
+
+.signature {
+  color: #9c8a8a;
+}
+
+.row-container {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+#title-business {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+#discover-text {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 10%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 15px;
+  padding-right: 100px;
+}
+
+#left-col {
+  background-color: #1b1938;
+}
+
+.info-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Inter', sans-serif;
+  font-weight: 15px;
+}
+
+.info-text-md {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 15px;
+}
+
+.number-text {
+  color: white;
+  font-size: 22px;
+  font-family: 'Inter', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  #title-business {
+    font-size: 38px;
+  }
+  #img-background {
+    content: url("images-card/image-header-desktop.jpg");
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    width: 100%;
+    height: 100%;
+  }
+  #left-col {
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+  }
+  .shade-container {
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1180px) {
+  .br-newline {
+    content: ' ';
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 767px) {
+  #title-business {
+    font-size: 32px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #advertisement-background {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+  }
+  #img-background {
+    content: url("images-card/image-header-mobile.jpg");
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    width: 100%;
+    height: 100%;
+  }
+  .paragraph-text {
+    text-align: center;
+  }
+  #left-col {
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+  .shade-container {
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .info-text-md {
+    font-size: 12px;
+  }
+}
+
+/*
+$par-color:red;
+.mypar1{
+    background-color: $par-color ;
+    font-size: 34px;
+}
+.mypar2{
+    background-color: $par-color ;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+//Sass sintax permits you to inglobe the file 
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+  // WITH SASS INSTEAD TO LOSE TIME WITH THE FOLLOWING SINTAX
+ /*
+  .my-row-btn button{
+     background-color: yellow;
+ } 
+
+ //I CAN PUT IT NESTED 
+ .my-row-btn{
+        button{
+            background-color: red;
+        }
+ }
+
+ //IT IS POSSIBLE TO CREATE CODE THAT IS REUSABLE THROUGH THE WHOLE FILE
+ @mixin important-row {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid blue;
+    height: 400px
+ }
+//SO I CAN INCLUDE IMPORTANT TEXT HERE
+.danger {
+  @include important-row;
+  background-color: green;
+}
+
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-report  {
+    @extend .button-basic;
+    background-color: blue;
+  }*/
+/*# sourceMappingURL=style-card.css.map */
