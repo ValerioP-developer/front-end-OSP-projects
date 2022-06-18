@@ -323,6 +323,15 @@ input[type=text]:focus {
     }
 }
 @media (min-width: 0px) and  (max-width: 575px) {
+    #blog-container{
+        flex-direction:column;
+    }
+    #commercial-table{
+        display: none;
+    }
+    #commercial-container{
+      flex-direction:column;
+    }
     /*#mySidenav{
        display: none;
     }*/
@@ -472,10 +481,10 @@ input[type=text]:focus {
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="navbar-nav right-navbar mr-auto" >
-                <li><a href="#flex-about" id="feature-a-link"> About </a></li>
-                <li><a href="#projects" id="team-a-link"> Projects </a></li>
+                <li><a href="#flex-about" id="feature-a-link"> About </a></li>  
+                <li><a href="#projects" id="team-a-link"> Projects </a></li>  
                 <li><a href="indexblog.html" id="signin-a-link"> Blog </a></li>  
-                <li><a href="#contact" id="signin-a-link"> Contacts </a></li> 
+                <li><a href="#contact" id="signin-a-link"> Contacts </a></li>  
             </ul>
           </div>
     </div>
@@ -486,8 +495,8 @@ input[type=text]:focus {
         </div>
         <div id="nav-container"   >
             <ul class="nav base-family-text"   >
-                <li><a href="#flex-about" id="feature-a-link"> About </a></li>
-                <li><a href="#projects" id="team-a-link"> Projects </a></li>
+                <li><a href="#flex-about" id="feature-a-link"> About </a></li>  
+                <li><a href="#projects" id="team-a-link"> Projects </a></li>  
                 <li><a href="indexblog.html" id="signin-a-link"> Blog </a></li>  
                 <li><a href="#contact" id="signin-a-link"> Contacts </a></li>  
             </ul>
@@ -521,7 +530,7 @@ input[type=text]:focus {
                 </p>
         </div>
         <div  id="skill-centre"  style="margin-right: 1%;margin-top:10%;">
-                  <p  class="text-parag" > Skills 222 dklkdfjgdfs
+                  <p  class="text-parag" style="display: inline-block;"> Skills 222 dklkdfjgdfs
                       dkfskk ldfkf ldsògfgfdsjglkg
                       gjfdslkjglfk ajlkd asjf
                       alkdsf jlk adsfj lkasd jflkasjl
@@ -573,12 +582,24 @@ input[type=text]:focus {
             </div>
         </div>
         <div id="right-blog-container" class="text-center" style="background-color: green; display: flex;">
-            <div style="display:flex;justify-content:left;width: 60%;background-color: red;" >
-                Some Commercial Description
+            <div style="justify-content:left;width: 60%;background-color: red;"   >
+                <table style="width: 100%;" id="commercial-table">
+                    <tr>
+                        <p>ciaoo111 lajsdfjaslk ljfdasljf lksaj lkjfasdlkj flskdj lkfajsdlk fslkaj</p>
+                    </tr>
+                    <tr>
+                        <p>holaa222 lajsdfjaslk ljfdasljf lksaj lkjfasdlkj flskdj lkfajsdlk fslkaj</p>
+                    </tr>
+                    <tr>
+                        <th><img src="images/icon-facebook.svg"   class="img-fluid"  style="width:50px;height: 50px;margin-top:5%;" > </th>
+                        <th><img src="images/icon-facebook.svg"   class="img-fluid"  style="width:50px;height: 50px;margin-top:5%;" > </th>
+                        <th><img src="images/icon-facebook.svg"   class="img-fluid"  style="width:50px;height: 50px;margin-top:5%;" > </th>
+                    </tr>
+                </table>
             </div>
-            <div style="display:flex;justify-content: right;background-color: orange;width: 40%;">
-                This is my blog    
-                <a href="#"  style="font-size: 30px;padding:10px;" class="text-center">  <img src="images/wip.jpg" style="width:200px;height: 150px;"   class="img-fluid" > </a>
+            <div style="display:flex;justify-content: right;background-color: orange;width: 40%;flex-direction: column;" id="blog-container">
+                <div> This is my blog </div> 
+                <div><a href="#"  class="text-center" >  <img src="images/wip.jpg"   class="img-fluid" > </a></div> 
             </div>
         </div>
     </div>
