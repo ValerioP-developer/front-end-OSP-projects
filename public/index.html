@@ -431,6 +431,8 @@ input[type=text]:focus {
   position: fixed;
   /*z-index: 1;*/
   top: 6%;
+  left:0%;
+  right: 0%;
   background-color:rgb(6, 6, 22) ;
   overflow-x: hidden;
   transition: 0.5s;
@@ -454,7 +456,10 @@ input[type=text]:focus {
   font-size: 36px;
   margin-left: 50px;
 }
-
+.button1:hover {
+  color:orange;
+  font-weight: bold;
+}
 
 </style>
 </head>
@@ -545,16 +550,16 @@ input[type=text]:focus {
                 </ol>
                 <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100  project-img" src="images/loopstudio-cover.PNG"  alt="First slide">
+                            <a href="indexLoopStudio.html"   target="_blank">  <img class="d-block w-100  project-img" src="images/loopstudio-cover.PNG"  alt="First slide">  <a> 
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100  project-img"  src="images/sunny-cover.PNG"  alt="Second slide">
+                            <a href="indexSunnySide.html"   target="_blank"> <img class="d-block w-100  project-img"  src="images/sunny-cover.PNG"  alt="Second slide"   target="_blank">  <a> 
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100  project-img" src="images/fylo-cover.PNG"  alt="Third slide">
+                            <a href="indexFylo.html"   target="_blank"><img class="d-block w-100  project-img" src="images/fylo-cover.PNG"  alt="Third slide"   target="_blank"> </a> 
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100  project-img" src="images/business-card-cover.PNG"  alt="Third slide">
+                            <a href="indexBusinessCard.html"   target="_blank"> <img class="d-block w-100  project-img" src="images/business-card-cover.PNG"  alt="Third slide"   target="_blank"> </a>
                         </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -594,7 +599,7 @@ input[type=text]:focus {
         </div>
     </div>
     <div class="section-title-div" style="margin-top: 0px;">
-           <button class="button button1">Submit</button>
+           <button class="button button1"  style="   outline: none;">Submit</button>
     </div>
     <div class="flex-container text-center" style="background-color: rgb(6, 6, 22);border-bottom-style: groove;border-left-style: groove;border-color:  red;margin:0%;justify-content: center;;" >
         <!-- 
@@ -603,7 +608,7 @@ input[type=text]:focus {
           <span> <a href="#" >   <img src="images-loopstudio/icon-facebook.svg"   class="img-fluid"  style="margin-top:5%;" ></a> </span>  
         -->
         <div style="height: auto;"  >
-          <ul >
+          <ul>
             <li>  <a href="#" >  <img src="images/icon-facebook.svg"   class="img-fluid"  style="margin:5%;" > </a></li>
             <li>  <a href="#" >  <img src="images/icon-facebook.svg"   class="img-fluid"  style="margin:5%;" > </a></li>
             <li>  <a href="#" >  <img src="images/icon-facebook.svg"   class="img-fluid"  style="margin:5%;" > </a></li>
@@ -619,11 +624,9 @@ input[type=text]:focus {
         function plusSlides(n) {
           showSlides(slideIndex += n);
         }
-        
         function currentSlide(n) {
           showSlides(slideIndex = n);
         }
-        
         function showSlides(n) {
           let i;
           let slides = document.getElementsByClassName("mySlides");
@@ -648,7 +651,10 @@ input[type=text]:focus {
             document.getElementById("mySidenav").style.width = "0";
         }
         function hideNavbar(){
+            document.getElementById("mySidenav").style.width = "0%";
             document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("navbar-nav").style.display = "none";
+     
         }
     </script>
 
